@@ -1,4 +1,4 @@
-{% set version = '4.7.0' %}
+{% set version = "5.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/earth_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/earth/earth_{{ version }}.tar.gz
-  sha256: 846c3717d2427981b6191f752fe7dde90e200062fac04068a909fc55c72dd610
+  sha256: daa8a300e4b06406c8378d9606034db713982a523c63abba1035a3523c608629
 
 build:
   merge_build_host: True  # [win]
