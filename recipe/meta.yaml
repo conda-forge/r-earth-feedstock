@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,19 +25,21 @@ requirements:
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('fortran') }}        # [not win]
     - {{ compiler('m2w64_fortran') }}  # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
+    - libopenblas
     - r-base
     - r-formula >=1.2_3
     - r-teachingdemos >=2.10
     - r-plotmo >=3.5.4
   run:
+    - libopenblas
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-formula >=1.2_3
     - r-teachingdemos >=2.10
     - r-plotmo >=3.5.4
@@ -49,7 +51,7 @@ test:
 
 about:
   home: http://www.milbo.users.sonic.net/earth
-  license: GPL-3
+  license: GPL-3.0-or-later
   summary: Build regression models using the techniques in Friedman's papers "Fast MARS" and
     "Multivariate Adaptive Regression Splines" <doi:10.1214/aos/1176347963>. (The term
     "MARS" is trademarked and thus not used in the name of the package.)
