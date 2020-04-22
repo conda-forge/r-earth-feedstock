@@ -31,11 +31,13 @@ requirements:
     - {{posix}}coreutils         # [win]
     - {{posix}}zip               # [win]
   host:
+    - libopenblas
     - r-base
     - r-formula >=1.2_3
     - r-teachingdemos >=2.10
     - r-plotmo >=3.5.4
   run:
+    - libopenblas
     - r-base
     - {{native}}gcc-libs         # [win]
     - r-formula >=1.2_3
