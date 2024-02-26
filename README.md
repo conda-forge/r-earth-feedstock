@@ -3,6 +3,7 @@ About r-earth-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-earth-feedstock/blob/main/LICENSE.txt)
 
+
 About r-earth
 -------------
 
@@ -11,6 +12,7 @@ Home: http://www.milbo.users.sonic.net/earth
 Package license: GPL-3.0-or-later
 
 Summary: Build regression models using the techniques in Friedman's papers "Fast MARS" and "Multivariate Adaptive Regression Splines" <doi:10.1214/aos/1176347963>. (The term "MARS" is trademarked and thus not used in the name of the package.)
+
 About r-earth
 -------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
